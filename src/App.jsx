@@ -4,6 +4,8 @@ import Homepage from "./pages/Homepage"
 import Pricing from "./pages/Pricing"
 import PageNotFound from "./pages/PageNotFound"
 import AppLayout from "./pages/AppLayout"
+import Login from "./pages/Login"
+import CityList from "./components/CityList"
 
 function App() {
   return (
@@ -12,8 +14,14 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<PageNotFound />} />
-        <Route path="app" element={<AppLayout />} />
+        <Route path="app" element={<AppLayout />}>
+          <Route index element={<CityList />} />
+          <Route path="cites" element={<CityList />} />
+          <Route path="countries" element={<p>Countries</p>} />
+          <Route path="form" element={<p>form</p>} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

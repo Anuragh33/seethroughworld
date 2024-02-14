@@ -35,6 +35,18 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "id": "0001",
+      "cityName": "Tahlequah",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2023-10-16T23:45:18.000Z",
+      "notes": "Currently Staying",
+      "position": {
+        "lat": "35.902399875143644",
+        "lng": "-94.93835449218751"
+      }
     }
   ]
 }
